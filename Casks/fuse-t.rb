@@ -13,7 +13,8 @@ cask "fuse-t" do
               "/Applications/fuse-t.app",
               "/usr/local/include/fuse",
               "/usr/local/include/fuse3",
-              "/usr/local/lib/libfuse3*", 
+              "/usr/local/lib/libfuse-t*",
+              "/usr/local/lib/libfuse3*",
             ],
             pkgutil: [
               "org.fuse-t.*",
