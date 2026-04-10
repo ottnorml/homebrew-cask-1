@@ -9,7 +9,13 @@ cask "fuse-t" do
 
   pkg "fuse-t-macos-installer-#{version}.pkg"
 
-  uninstall delete: "/Applications/fuse-t.app",
+  uninstall delete: [
+              "/Applications/fuse-t.app",
+              "/usr/local/include/fuse",
+              "/usr/local/include/fuse3",
+              "/usr/local/lib/libfuse-t*",
+              "/usr/local/lib/libfuse3*",
+            ],
             pkgutil: [
               "org.fuse-t.*",
               "org.fuse-t.core.*",
